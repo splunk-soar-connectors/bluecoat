@@ -1,19 +1,19 @@
 {
-  "appid" : "a1a7079c-e1ab-4dff-8b63-22491a0b990a",
-  "name" : "Blue Coat",
-  "description" : "Query Blue Coat cloud services and configure appliance.",
-  "type" : "network access control",
-  "main_module" : "bluecoat_connector.py",
-  "app_version" : "1.1.3",
-  "product_vendor" : "Blue Coat Systems, Inc.",
-  "product_name" : "Blue Coat",
+  "appid": "a1a7079c-e1ab-4dff-8b63-22491a0b990a",
+  "name": "Blue Coat",
+  "description": "Query Blue Coat cloud services and configure appliance.",
+  "type": "network access control",
+  "main_module": "bluecoat_connector.py",
+  "app_version": "1.1.4",
+  "product_vendor": "Blue Coat Systems, Inc.",
+  "product_name": "Blue Coat",
   "product_version_regex": ".*",
   "logo": "bluecoat.png",
   "min_phantom_version": "1.2.265",
-  "publisher" : "Blackstone",
+  "publisher": "Blackstone",
   "package_name": "phantom_bluecoat",
   "license": "Copyright (c) Blackstone 2016-2017",
-  "consolidate_widgets" : false,
+  "consolidate_widgets": false,
   "require_auth_token": false,
   "rest_handler": "bluecoat_connector.handle_request",
   "configuration": {
@@ -67,8 +67,7 @@
       "lock": {
         "enabled": false
       },
-      "parameters": {
-      },
+      "parameters": {},
       "output": [],
       "versions": "EQ(*)"
     },
@@ -86,7 +85,9 @@
         "url": {
           "description": "URL to block",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "required": true,
           "primary": true
         }
@@ -115,10 +116,12 @@
         {
           "data_path": "action_result.parameter.url",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "column_order": 0
         }
-        ]
+      ]
     },
     {
       "action": "unblock url",
@@ -134,7 +137,9 @@
         "url": {
           "description": "URL to unblock",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "required": true,
           "primary": true
         }
@@ -163,10 +168,12 @@
         {
           "data_path": "action_result.parameter.url",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "column_order": 0
         }
-]
+      ]
     },
     {
       "action": "allow url",
@@ -182,7 +189,9 @@
         "url": {
           "description": "URL to allow",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "required": true,
           "primary": true
         }
@@ -211,10 +220,12 @@
         {
           "data_path": "action_result.parameter.url",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "column_order": 0
         }
-        ]
+      ]
     },
     {
       "action": "disallow url",
@@ -230,7 +241,9 @@
         "url": {
           "description": "URL to disallow",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "required": true,
           "primary": true
         }
@@ -259,10 +272,12 @@
         {
           "data_path": "action_result.parameter.url",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "column_order": 0
         }
-        ]
+      ]
     },
     {
       "action": "url reputation",
@@ -278,7 +293,9 @@
         "url": {
           "description": "URL to query",
           "data_type": "string",
-          "contains": ["url"],
+          "contains": [
+            "url"
+          ],
           "required": true,
           "primary": true
         }
@@ -295,7 +312,9 @@
           "data_type": "string",
           "column_name": "URL",
           "column_order": 0,
-          "contains": ["url"]
+          "contains": [
+            "url"
+          ]
         },
         {
           "data_path": "action_result.data.*.BlueCoat",
@@ -314,10 +333,12 @@
         {
           "data_path": "action_result.parameter.url",
           "data_type": "string",
-          "contains": ["url"]
+          "contains": [
+            "url"
+          ]
         }
-        
       ]
     }
-  ]
+  ],
+  "utctime_updated": "2018-01-02T20:45:43.000000Z"
 }
