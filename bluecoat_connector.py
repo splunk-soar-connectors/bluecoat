@@ -36,7 +36,7 @@ def _load_data(list_mgr_connector=None):
     """Loads the data that was added to."""
     # Get the directory of the file
     dir_path = os.path.split(__file__)[0]
-    list_data_file = '{0}/list_data.json'.format(dir_path)
+    list_data_file = '{0}/data/list_data.json'.format(dir_path)
     list_data = {'blacklist': [], 'whitelist': []}
     try:
         # If database file already exists, load it.
@@ -58,7 +58,7 @@ def _save_data(list_data, list_mgr_connector):
     """Saves the list_data into the same file."""
     # Get the directory of the file
     dir_path = os.path.split(__file__)[0]
-    list_data_file = '{0}/list_data.json'.format(dir_path)
+    list_data_file = '{0}/data/list_data.json'.format(dir_path)
     if list_mgr_connector:
         list_mgr_connector.debug_print('Saving state: ', list_data)
     try:
